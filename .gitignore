@@ -1,0 +1,13 @@
+# Secrets and local configuration
+.env
+
+# Operating system files
+Thumbs.db
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+
+# Dependencies (later :3)
+vendor/
