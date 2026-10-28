@@ -6,6 +6,7 @@
   <title>NAMI — Letters to tomorrow</title>
   <meta name="description" content="NAMI is a pixel-art time capsule. Write a letter to your future self, seal it, and return on the day you chose to read it.">
   <meta name="theme-color" content="#091522">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -27,34 +28,101 @@
 
     <section id="shore" aria-labelledby="shore-title">
       <h1 id="shore-title">NAMI</h1>
-      <p>Letters to tomorrow.</p>
-      <a href="#lighthouse">Write a letter</a>
+      <p class="tagline">Letters to tomorrow.</p>
+      <p class="lead">Write a letter to your future self, seal it in a bottle, and let the sea carry it to the day you choose. When that day arrives, it will be waiting on the shore.</p>
+      <p class="actions">
+        <a class="button" href="#lighthouse">Write a letter</a>
+        <a class="button button-secondary" href="#village">Wander into the village</a>
+      </p>
+      <div class="scene" aria-hidden="true">
+        <span class="scene-sun"></span>
+        <span class="scene-lighthouse"></span>
+        <span class="scene-sea"></span>
+        <span class="scene-bottle"></span>
+      </div>
+      <p class="hint"><span lang="ja">波</span> (nami) means &ldquo;wave&rdquo; in Japanese.</p>
     </section>
 
     <section id="village" aria-labelledby="village-title">
       <h2 id="village-title">The Village</h2>
-      <p>The story behind NAMI will live here.</p>
+      <p class="lead">Somewhere between yesterday and tomorrow there is a quiet seaside village. Its lanterns never go out, and its lighthouse keeper has one job: looking after letters that are not ready to be read yet.</p>
+      <ol class="steps">
+        <li>
+          <h3>Write</h3>
+          <p>Sit down at the lighthouse and write to the person you are about to become. Say what you hope for, what worries you, and what today feels like.</p>
+        </li>
+        <li>
+          <h3>Seal</h3>
+          <p>Choose the day your letter should be opened. It is folded, corked into a bottle and set afloat. From that moment it stays closed until its day.</p>
+        </li>
+        <li>
+          <h3>Return</h3>
+          <p>When the day comes, the bottle drifts back to shore. Open it, and meet the person you used to be.</p>
+        </li>
+      </ol>
+      <p>Some letters travel for a few weeks. Others cross years.</p>
     </section>
 
     <section id="lighthouse" aria-labelledby="lighthouse-title">
       <h2 id="lighthouse-title">The Lighthouse</h2>
-      <p>The writing desk will appear here.</p>
+      <p class="lead">The writing desk sits at the top of the lighthouse, where the light is warm and nobody is watching.</p>
+      <p>Here you will be able to:</p>
+      <ul>
+        <li>give your letter a title</li>
+        <li>write as much or as little as you like</li>
+        <li>choose the day it will be opened</li>
+        <li>read it through once more before it is sealed</li>
+        <li>seal it and send it out to sea</li>
+      </ul>
+      <p class="notice">The writing desk is still being built. Check back soon.</p>
+      <button type="button" disabled>Writing desk opening soon</button>
     </section>
 
     <section id="ocean" aria-labelledby="ocean-title">
       <h2 id="ocean-title">The Ocean</h2>
-      <p>Letters travelling through time.</p>
+      <p class="lead">Beyond the pier the water is full of bottles. Each one carries a promise from someone to the person they are about to become.</p>
+      <p>Every letter drifts at its own pace, sealed against the tide until its day arrives. Some will be read in a month, some in a decade.</p>
+      <p class="notice">One day, a few anonymous messages may wash ashore for everyone to read. Nothing like that will appear without careful thought about privacy and moderation first.</p>
     </section>
 
     <section id="about" aria-labelledby="about-title">
       <h2 id="about-title">About</h2>
-      <p>The philosophy behind NAMI.</p>
+      <p class="lead">NAMI began with a simple question: what would you say to yourself a year from now?</p>
+      <p>Most of us never ask. Days blur together, and the person we were last spring becomes a stranger. A letter is a small act of care across time, and NAMI gives it a quiet place to wait.</p>
+      <p>NAMI is an independent project, built by hand with HTML, CSS, JavaScript, PHP and MySQL, and a lasting fondness for old pixel-art games.</p>
+
+      <h3>Questions</h3>
+      <div class="faq">
+        <details>
+          <summary>Can I open a letter early?</summary>
+          <p>No. A sealed letter stays sealed until the date you chose.</p>
+        </details>
+        <details>
+          <summary>Who can read my letters?</summary>
+          <p>Letters are private to the person who wrote them.</p>
+        </details>
+        <details>
+          <summary>Will I be told when my bottle arrives?</summary>
+          <p>Yes. You will receive an email when your letter is ready to be opened.</p>
+        </details>
+      </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="#shore">The Shore</a></li>
+        <li><a href="#village">The Village</a></li>
+        <li><a href="#lighthouse">The Lighthouse</a></li>
+        <li><a href="#ocean">The Ocean</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
     <p>NAMI — Letters to tomorrow.</p>
+    <p><a href="https://github.com/mlsptrvc/nami">Source on GitHub</a></p>
+    <p>&copy; 2026 NAMI</p>
   </footer>
 </body>
 </html>
